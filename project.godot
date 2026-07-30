@@ -19,6 +19,10 @@ config/icon="res://icon.svg"
 
 buses/default_bus_layout="uid://b5mkten2d10uv"
 
+[editor]
+
+movie_writer/movie_file="D:/tools/Godot/projects/prime-omen/recordings/60note.avi"
+
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/godot_super-wakatime/plugin.cfg")

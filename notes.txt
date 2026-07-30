@@ -28,6 +28,6 @@ console.log(resultString)
 # after ripping, copy paste to google doc, turn newline into commas, and voila
 
 # notes to devlog:
-	yeah no I lied I'm using Ultrabox, exporting a song that's one note long and less than a second to do this
-	Middle note is C4 here
-	Oh also, link to Desmos graph: https://www.desmos.com/calculator/bmfgmy4tsa
+	Smooth loop
+	Continue note when it's the same note (rather than playing the note again)
+	
