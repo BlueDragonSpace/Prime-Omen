@@ -2,7 +2,7 @@
 
 [sub_resource type="AudioEffectPitchShift" id="AudioEffectPitchShift_4tnwg"]
 resource_name = "PitchShift"
-pitch_scale = 1.28
+pitch_scale = 1.25
 
 [sub_resource type="AudioEffectChorus" id="AudioEffectChorus_4tnwg"]
 resource_name = "Chorus"
@@ -10,6 +10,6 @@ resource_name = "Chorus"
 [resource]
 bus/0/volume_db = -0.13049698
 bus/0/effect/0/effect = SubResource("AudioEffectPitchShift_4tnwg")
-bus/0/effect/0/enabled = true
+bus/0/effect/0/enabled = false
 bus/0/effect/1/effect = SubResource("AudioEffectChorus_4tnwg")
-bus/0/effect/1/enabled = true
+bus/0/effect/1/enabled = false

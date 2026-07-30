@@ -27,7 +27,10 @@ console.log(resultString)
 
 # after ripping, copy paste to google doc, turn newline into commas, and voila
 
-# notes to devlog:
+# To-Dos:
 	Smooth loop
 	Continue note when it's the same note (rather than playing the note again)
-	
+	Bar visualizer for how long til the song is done (or resets)
+# To-Dids:
+	Cool noise background because I like them
+	Buttons for start, stop, loop

@@ -21,7 +21,7 @@ buses/default_bus_layout="uid://b5mkten2d10uv"
 
 [editor]
 
-movie_writer/movie_file="D:/tools/Godot/projects/prime-omen/recordings/60note.avi"
+movie_writer/movie_file="D:/tools/Godot/projects/prime-omen/recordings/secondRecording.avi"
 
 [editor_plugins]
 
