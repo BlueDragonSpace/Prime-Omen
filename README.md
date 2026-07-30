@@ -8,3 +8,6 @@ Initially used pitch-shifting for the sounds, and realized it sounded terrible, 
 6:55PM:  
 	First audio clip! I had done this in Jummbox by hand a while back, never thought to put in it Godot to automate it til now tho
 <br> kinda haunting knowing how much it sounds like it has a pattern, when there isn't really... it's strange
+
+<br>
+<br>8PM: You know, this reminds me of the (Egg Song)[linkhttps://www.youtube.com/watch?v=JvAjtd8jhZc] from Animal Well...
