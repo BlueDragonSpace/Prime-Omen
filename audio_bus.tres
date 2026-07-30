@@ -1,0 +1,9 @@
+[gd_resource type="AudioBusLayout" format=3 uid="uid://b5mkten2d10uv"]
+
+[sub_resource type="AudioEffectPitchShift" id="AudioEffectPitchShift_4tnwg"]
+resource_name = "PitchShift"
+
+[resource]
+bus/0/volume_db = -0.13049698
+bus/0/effect/0/effect = SubResource("AudioEffectPitchShift_4tnwg")
+bus/0/effect/0/enabled = true

@@ -1,0 +1,36 @@
+[gd_scene format=3 uid="uid://ca7yxqgtsdi34"]
+
+[ext_resource type="Script" uid="uid://d3ihum5b3gond" path="res://main.gd" id="1_0xm2m"]
+[ext_resource type="AudioStream" uid="uid://l4y0vho081ud" path="res://SquareWave0.wav" id="2_h2yge"]
+[ext_resource type="AudioStream" uid="uid://dinjcvpu04ix5" path="res://sounds/C4.wav" id="3_1bvp3"]
+[ext_resource type="AudioStream" uid="uid://c7i73i05lo3so" path="res://sounds/D5.wav" id="3_lquwl"]
+[ext_resource type="AudioStream" uid="uid://kd8putdbwvqj" path="res://sounds/B4.wav" id="4_lquwl"]
+
+[node name="Main" type="Control" unique_id=1815165299]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_0xm2m")
+
+[node name="OldSystem" type="AudioStreamPlayer" parent="." unique_id=2124156075]
+stream = ExtResource("2_h2yge")
+
+[node name="NewSoundSystem" type="Node" parent="." unique_id=444491468]
+
+[node name="D5" type="AudioStreamPlayer" parent="NewSoundSystem" unique_id=883502962]
+stream = ExtResource("3_lquwl")
+
+[node name="C4" type="AudioStreamPlayer" parent="NewSoundSystem" unique_id=18079936]
+unique_name_in_owner = true
+stream = ExtResource("3_1bvp3")
+
+[node name="B4" type="AudioStreamPlayer" parent="NewSoundSystem" unique_id=1381203656]
+stream = ExtResource("4_lquwl")
+
+[connection signal="finished" from="OldSystem" to="." method="_on_audio_stream_player_finished"]
+[connection signal="finished" from="NewSoundSystem/D5" to="." method="_on_audio_stream_player_finished"]
+[connection signal="finished" from="NewSoundSystem/C4" to="." method="_on_audio_stream_player_finished"]
+[connection signal="finished" from="NewSoundSystem/B4" to="." method="_on_audio_stream_player_finished"]

@@ -1,0 +1,33 @@
+
+# rather than pitch shifting, it's likely a better idea to use different sounds for different numbers
+# plus, I think the sharps and flats are what's really screwing it up,
+# / and I don't have an easy way to take those out unless I do the aforementioned
+
+# OTHER NOTES
+
+# random Reddit user Javascript to rip the last array of a Desmos graph as plaintext
+
+state = Calc.getState()
+
+expressionToEvaluate = state.expressions.list[state.expressions.list.length-1].latex
+
+expressionResult = Calc.HelperExpression({latex: expressionToEvaluate})
+
+while(expressionResult.listValue == null){
+	console.log(expressionResult.listValue)
+	await new Promise(r => setTimeout(r, 100));
+}
+//await new Promise(r => setTimeout(r, 2000));
+
+resultString = ""
+for (i=0; i<expressionResult.listValue.length; i++) {
+	resultString += expressionResult.listValue[i] + "\n"
+}
+console.log(resultString)
+
+# after ripping, copy paste to google doc, turn newline into commas, and voila
+
+# notes to devlog:
+	yeah no I lied I'm using Ultrabox, exporting a song that's one note long and less than a second to do this
+	Middle note is C4 here
+	Oh also, link to Desmos graph: https://www.desmos.com/calculator/bmfgmy4tsa
