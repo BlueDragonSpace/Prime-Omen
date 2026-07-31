@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://drr73rwqqihvi"]
+
+[ext_resource type="Texture2D" uid="uid://od6gtbjwly1d" path="res://quasar.png" id="1_47jpb"]
+
+[node name="PianoParticle" type="Sprite2D" unique_id=1054338370]
+texture = ExtResource("1_47jpb")
+region_enabled = true

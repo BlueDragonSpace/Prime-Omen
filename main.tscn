@@ -31,6 +31,7 @@
 [ext_resource type="AudioStream" uid="uid://r5dufn060muo" path="res://sounds/F3.wav" id="28_4lmeg"]
 [ext_resource type="AudioStream" uid="uid://4jecmkmjcxaq" path="res://sounds/E3.wav" id="29_0cp0l"]
 [ext_resource type="AudioStream" uid="uid://cwtr2o7j6st7j" path="res://sounds/D3.wav" id="30_d2t1y"]
+[ext_resource type="Script" uid="uid://kp4tbm3s8mjy" path="res://spectrum_visual.gd" id="32_htxhm"]
 
 [sub_resource type="Gradient" id="Gradient_074og"]
 interpolation_mode = 2
@@ -190,16 +191,19 @@ size_flags_horizontal = 3
 [node name="Start" type="Button" parent="VBoxContainer/HBoxContainer" unique_id=1159871330]
 layout_mode = 2
 size_flags_horizontal = 3
+mouse_default_cursor_shape = 2
 text = "Start"
 
 [node name="Stop" type="Button" parent="VBoxContainer/HBoxContainer" unique_id=2033310916]
 layout_mode = 2
 size_flags_horizontal = 3
+mouse_default_cursor_shape = 2
 text = "Stop"
 
 [node name="Loop" type="CheckBox" parent="VBoxContainer/HBoxContainer" unique_id=1423507469]
 layout_mode = 2
 size_flags_horizontal = 3
+mouse_default_cursor_shape = 2
 button_pressed = true
 text = "Loop"
 
@@ -208,10 +212,82 @@ modulate = Color(1, 1, 1, 0)
 layout_mode = 2
 size_flags_horizontal = 3
 
+[node name="HBoxContainer2" type="HBoxContainer" parent="VBoxContainer" unique_id=997804600]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="VSeparator" type="VSeparator" parent="VBoxContainer/HBoxContainer2" unique_id=1666290399]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.38
+
+[node name="SpectrumVisual" type="Control" parent="VBoxContainer/HBoxContainer2" unique_id=934055339]
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_filter = 2
+script = ExtResource("32_htxhm")
+
+[node name="VSeparator2" type="VSeparator" parent="VBoxContainer/HBoxContainer2" unique_id=236505052]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
 [node name="HSeparator2" type="HSeparator" parent="VBoxContainer" unique_id=1938878706]
 modulate = Color(1, 1, 1, 0)
 layout_mode = 2
 size_flags_vertical = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=1428021981]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+mouse_behavior_recursive = 1
+metadata/_edit_lock_ = true
+
+[node name="VSeparator" type="VSeparator" parent="HBoxContainer" unique_id=228788186]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.1
+mouse_filter = 2
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="HBoxContainer" unique_id=814640480]
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_filter = 2
+
+[node name="HSeparator" type="HSeparator" parent="HBoxContainer/VBoxContainer2" unique_id=1765356191]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.1
+mouse_filter = 2
+
+[node name="PianoBox" type="VBoxContainer" parent="HBoxContainer/VBoxContainer2" unique_id=1994732923]
+layout_mode = 2
+size_flags_vertical = 3
+mouse_filter = 2
+
+[node name="HSeparator2" type="HSeparator" parent="HBoxContainer/VBoxContainer2" unique_id=526187831]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.1
+mouse_filter = 2
+
+[node name="VSeparator2" type="VSeparator" parent="HBoxContainer" unique_id=1647150770]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 6.56
+mouse_filter = 2
+mouse_behavior_recursive = 1
+metadata/_edit_lock_ = true
 
 [connection signal="finished" from="OldSystem" to="." method="_on_audio_stream_player_finished"]
 [connection signal="finished" from="NewSoundSystem/C6" to="." method="_on_audio_stream_player_finished"]
@@ -242,6 +318,7 @@ size_flags_vertical = 3
 [connection signal="finished" from="NewSoundSystem/F3" to="." method="_on_audio_stream_player_finished"]
 [connection signal="finished" from="NewSoundSystem/E3" to="." method="_on_audio_stream_player_finished"]
 [connection signal="finished" from="NewSoundSystem/D3" to="." method="_on_audio_stream_player_finished"]
+[connection signal="finished" from="EmptyNote" to="." method="_on_empty_note_finished"]
 [connection signal="finished" from="EmptyNote" to="." method="_on_audio_stream_player_finished"]
 [connection signal="pressed" from="VBoxContainer/HBoxContainer/Start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="VBoxContainer/HBoxContainer/Stop" to="." method="_on_stop_pressed"]

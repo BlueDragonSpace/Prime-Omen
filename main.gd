@@ -8,6 +8,9 @@ extends Control
 @onready var background: TextureRect = $Background
 @onready var loop: CheckBox = $VBoxContainer/HBoxContainer/Loop
 
+@onready var piano_box: VBoxContainer = $HBoxContainer/VBoxContainer2/PianoBox
+const PIANO_NOTE = preload("uid://4d83v8sjt701")
+
 const AUDIO_BUS = preload("uid://b5mkten2d10uv")
 
 # 60 notes
@@ -24,6 +27,12 @@ var c4_position : int
 
 func _ready() -> void:
 	c4_position = c_4.get_index()
+	
+	# adds piano notes
+	for i in range(new_sound_system.get_child_count()):
+		var child = PIANO_NOTE.instantiate()
+		child.modulate.h = 0.5
+		piano_box.add_child(child)
 
 func _process(delta: float) -> void:
 	background.texture.noise.offset.x += 5 * delta
@@ -31,13 +40,10 @@ func _process(delta: float) -> void:
 	background.texture.noise.offset.z += 15 * delta
 
 func start_song() -> void:
-	beat_count = 1
+	beat_count = 0
 	
 	# begins the song
-	if pitches[0] == 0:
-		c_4.play()
-	else:
-		print('never included a case for this, assumed every song would start with c4 :P')
+	empty_note.play()
 
 func _on_audio_stream_player_finished() -> void:
 	
@@ -52,8 +58,13 @@ func _on_audio_stream_player_finished() -> void:
 				# note is out of bounds, play empty_note and just go to the next one
 				empty_note.play()
 			else:
+				# plays the note
 				var note = new_sound_system.get_child(note_position)
 				note.play()
+				
+				# add a thing to the piano visual
+				var piano_note = piano_box.get_child(note_position)
+				piano_note.add_particle()
 			
 			beat_count += 1
 		elif loop.button_pressed:
@@ -64,6 +75,8 @@ func _on_start_pressed() -> void:
 	playing = true
 	start_song()
 
-
 func _on_stop_pressed() -> void:
 	playing = false
+
+func _on_empty_note_finished() -> void:
+	print('empty note played')
