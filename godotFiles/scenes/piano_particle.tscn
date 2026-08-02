@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://drr73rwqqihvi"]
 
-[ext_resource type="Texture2D" uid="uid://b3t1it1o8bllp" path="res://assets/whiteRectangle.webp" id="1_a817m"]
+[ext_resource type="Texture2D" uid="uid://b3t1it1o8bllp" path="res://assets/img/whiteRectangle.webp" id="1_a817m"]
 [ext_resource type="Script" uid="uid://cqrpfnisn3gsf" path="res://godotFiles/scripts/piano_particle.gd" id="2_sxpwe"]
 
 [node name="PianoParticle" type="Sprite2D" unique_id=1054338370]

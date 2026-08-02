@@ -10,10 +10,11 @@ config_version=5
 
 [application]
 
-config/name="PrimeOmen"
+config/name="PrimeOmenPlayer"
+config/description="Automates playing prime omens, once data is correctly configured..."
 run/main_scene="res://godotFiles/scenes/main.tscn"
 config/features=PackedStringArray("4.6", "GL Compatibility")
-config/icon="res://assets/icon.svg"
+config/icon="uid://drawpjyyl8o60"
 
 [audio]
 

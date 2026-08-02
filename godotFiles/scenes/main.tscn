@@ -33,7 +33,7 @@
 [ext_resource type="AudioStream" uid="uid://cwtr2o7j6st7j" path="res://assets/sounds/D3.wav" id="31_r8aaa"]
 [ext_resource type="AudioStream" uid="uid://0x1ad3tni8s0" path="res://assets/EmptyNote.wav" id="32_5mj6e"]
 [ext_resource type="Script" uid="uid://kp4tbm3s8mjy" path="res://godotFiles/scripts/spectrum_visual.gd" id="33_k0k0w"]
-[ext_resource type="Texture2D" uid="uid://cadljgc2gub8x" path="res://assets/icon.svg" id="34_u01ed"]
+[ext_resource type="Texture2D" uid="uid://cadljgc2gub8x" path="res://assets/img/icon.svg" id="34_u01ed"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4k2k6"]
 bg_color = Color(0.69366175, 0.741132, 0.5366445, 1)

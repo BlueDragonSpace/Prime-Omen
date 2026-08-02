@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://4d83v8sjt701"]
 
-[ext_resource type="Texture2D" uid="uid://b3t1it1o8bllp" path="res://assets/whiteRectangle.webp" id="1_nuuaj"]
+[ext_resource type="Texture2D" uid="uid://b3t1it1o8bllp" path="res://assets/img/whiteRectangle.webp" id="1_nuuaj"]
 [ext_resource type="Script" uid="uid://b844s1b22vqru" path="res://godotFiles/scripts/piano_note.gd" id="2_jsjrq"]
 
 [sub_resource type="Animation" id="Animation_ufrjt"]
