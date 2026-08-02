@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://ca7yxqgtsdi34"]
 
 [ext_resource type="Script" uid="uid://d3ihum5b3gond" path="res://main.gd" id="1_0xm2m"]
+[ext_resource type="StyleBox" uid="uid://dc7wx2v5yw4xy" path="res://custom_button.tres" id="1_jq2sk"]
 [ext_resource type="AudioStream" uid="uid://l4y0vho081ud" path="res://SquareWave0.wav" id="2_h2yge"]
 [ext_resource type="AudioStream" uid="uid://dinjcvpu04ix5" path="res://sounds/C4.wav" id="3_1bvp3"]
 [ext_resource type="AudioStream" uid="uid://gwpr27y1t8me" path="res://sounds/C5.wav" id="3_074og"]
@@ -33,9 +34,47 @@
 [ext_resource type="AudioStream" uid="uid://cwtr2o7j6st7j" path="res://sounds/D3.wav" id="30_d2t1y"]
 [ext_resource type="Script" uid="uid://kp4tbm3s8mjy" path="res://spectrum_visual.gd" id="32_htxhm"]
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4k2k6"]
+bg_color = Color(0.69366175, 0.741132, 0.5366445, 1)
+skew = Vector2(0.38, -0.015)
+border_width_left = 2
+border_width_top = 3
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.48917422, 0.5220383, 0.37597576, 0.39215687)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jq2sk"]
+bg_color = Color(0.66753334, 0.71334684, 0.515996, 1)
+skew = Vector2(0.315, -0.065)
+border_width_left = 7
+border_width_top = 5
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color(0.48917422, 0.5220383, 0.37597576, 0.39215687)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="Theme" id="Theme_0rl1p"]
+default_font_size = 50
+Button/styles/disabled = ExtResource("1_jq2sk")
+Button/styles/focus = ExtResource("1_jq2sk")
+Button/styles/hover = SubResource("StyleBoxFlat_4k2k6")
+Button/styles/normal = ExtResource("1_jq2sk")
+Button/styles/pressed = SubResource("StyleBoxFlat_jq2sk")
+CheckBox/styles/disabled = ExtResource("1_jq2sk")
+CheckBox/styles/hover = ExtResource("1_jq2sk")
+CheckBox/styles/hover_pressed = ExtResource("1_jq2sk")
+CheckBox/styles/normal = ExtResource("1_jq2sk")
+
 [sub_resource type="Gradient" id="Gradient_074og"]
 interpolation_mode = 2
-colors = PackedColorArray(0.55486673, 0.770758, 0.69581175, 1, 0.16419643, 0.40997759, 0.42848843, 1)
+colors = PackedColorArray(0.2509804, 0.30588236, 0.36078432, 1, 0.30980393, 0.38431373, 0.44705883, 1)
 
 [sub_resource type="FastNoiseLite" id="FastNoiseLite_cegan"]
 seed = 314
@@ -62,6 +101,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme = SubResource("Theme_0rl1p")
 script = ExtResource("1_0xm2m")
 
 [node name="OldSystem" type="AudioStreamPlayer" parent="." unique_id=2124156075]
@@ -158,6 +198,7 @@ stream = ExtResource("30_d2t1y")
 stream = ExtResource("12_074og")
 
 [node name="Background" type="TextureRect" parent="." unique_id=884010278]
+z_index = -10
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -165,78 +206,6 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = SubResource("NoiseTexture2D_82xsv")
-
-[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=2085162458]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-
-[node name="HSeparator" type="HSeparator" parent="VBoxContainer" unique_id=747003816]
-modulate = Color(1, 1, 1, 0)
-layout_mode = 2
-size_flags_vertical = 3
-
-[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer" unique_id=1731592396]
-layout_mode = 2
-size_flags_vertical = 3
-
-[node name="VSeparator" type="VSeparator" parent="VBoxContainer/HBoxContainer" unique_id=918215433]
-modulate = Color(1, 1, 1, 0)
-layout_mode = 2
-size_flags_horizontal = 3
-
-[node name="Start" type="Button" parent="VBoxContainer/HBoxContainer" unique_id=1159871330]
-layout_mode = 2
-size_flags_horizontal = 3
-mouse_default_cursor_shape = 2
-text = "Start"
-
-[node name="Stop" type="Button" parent="VBoxContainer/HBoxContainer" unique_id=2033310916]
-layout_mode = 2
-size_flags_horizontal = 3
-mouse_default_cursor_shape = 2
-text = "Stop"
-
-[node name="Loop" type="CheckBox" parent="VBoxContainer/HBoxContainer" unique_id=1423507469]
-layout_mode = 2
-size_flags_horizontal = 3
-mouse_default_cursor_shape = 2
-button_pressed = true
-text = "Loop"
-
-[node name="VSeparator2" type="VSeparator" parent="VBoxContainer/HBoxContainer" unique_id=530976047]
-modulate = Color(1, 1, 1, 0)
-layout_mode = 2
-size_flags_horizontal = 3
-
-[node name="HBoxContainer2" type="HBoxContainer" parent="VBoxContainer" unique_id=997804600]
-layout_mode = 2
-size_flags_vertical = 3
-
-[node name="VSeparator" type="VSeparator" parent="VBoxContainer/HBoxContainer2" unique_id=1666290399]
-modulate = Color(1, 1, 1, 0)
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_stretch_ratio = 0.38
-
-[node name="SpectrumVisual" type="Control" parent="VBoxContainer/HBoxContainer2" unique_id=934055339]
-layout_mode = 2
-size_flags_horizontal = 3
-mouse_filter = 2
-script = ExtResource("32_htxhm")
-
-[node name="VSeparator2" type="VSeparator" parent="VBoxContainer/HBoxContainer2" unique_id=236505052]
-modulate = Color(1, 1, 1, 0)
-layout_mode = 2
-size_flags_horizontal = 3
-
-[node name="HSeparator2" type="HSeparator" parent="VBoxContainer" unique_id=1938878706]
-modulate = Color(1, 1, 1, 0)
-layout_mode = 2
-size_flags_vertical = 3
 
 [node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=1428021981]
 layout_mode = 1
@@ -289,6 +258,82 @@ mouse_filter = 2
 mouse_behavior_recursive = 1
 metadata/_edit_lock_ = true
 
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=2085162458]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HSeparator" type="HSeparator" parent="VBoxContainer" unique_id=747003816]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer" unique_id=1731592396]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="VSeparator" type="VSeparator" parent="VBoxContainer/HBoxContainer" unique_id=918215433]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Start" type="Button" parent="VBoxContainer/HBoxContainer" unique_id=1159871330]
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_default_cursor_shape = 2
+text = "Start"
+
+[node name="Stop" type="Button" parent="VBoxContainer/HBoxContainer" unique_id=2033310916]
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_default_cursor_shape = 2
+text = "Stop"
+
+[node name="Loop" type="CheckBox" parent="VBoxContainer/HBoxContainer" unique_id=1423507469]
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_default_cursor_shape = 2
+button_pressed = true
+text = "Loop"
+alignment = 1
+icon_alignment = 1
+
+[node name="VSeparator2" type="VSeparator" parent="VBoxContainer/HBoxContainer" unique_id=530976047]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="VBoxContainer" unique_id=997804600]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="VSeparator" type="VSeparator" parent="VBoxContainer/HBoxContainer2" unique_id=1666290399]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.38
+
+[node name="SpectrumVisual" type="Control" parent="VBoxContainer/HBoxContainer2" unique_id=934055339]
+z_index = -1
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_filter = 2
+script = ExtResource("32_htxhm")
+
+[node name="VSeparator2" type="VSeparator" parent="VBoxContainer/HBoxContainer2" unique_id=236505052]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HSeparator2" type="HSeparator" parent="VBoxContainer" unique_id=1938878706]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 6.6
+
 [connection signal="finished" from="OldSystem" to="." method="_on_audio_stream_player_finished"]
 [connection signal="finished" from="NewSoundSystem/C6" to="." method="_on_audio_stream_player_finished"]
 [connection signal="finished" from="NewSoundSystem/B6" to="." method="_on_audio_stream_player_finished"]
@@ -318,7 +363,7 @@ metadata/_edit_lock_ = true
 [connection signal="finished" from="NewSoundSystem/F3" to="." method="_on_audio_stream_player_finished"]
 [connection signal="finished" from="NewSoundSystem/E3" to="." method="_on_audio_stream_player_finished"]
 [connection signal="finished" from="NewSoundSystem/D3" to="." method="_on_audio_stream_player_finished"]
-[connection signal="finished" from="EmptyNote" to="." method="_on_empty_note_finished"]
 [connection signal="finished" from="EmptyNote" to="." method="_on_audio_stream_player_finished"]
+[connection signal="finished" from="EmptyNote" to="." method="_on_empty_note_finished"]
 [connection signal="pressed" from="VBoxContainer/HBoxContainer/Start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="VBoxContainer/HBoxContainer/Stop" to="." method="_on_stop_pressed"]

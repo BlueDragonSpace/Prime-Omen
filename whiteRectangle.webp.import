@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://od6gtbjwly1d"
-path="res://.godot/imported/quasar.png-66f9fa9d25b3811d80a506fdd04f1501.ctex"
+uid="uid://b3t1it1o8bllp"
+path="res://.godot/imported/whiteRectangle.webp-8a3f92e96fae3d7f538e65d067b87f6d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://quasar.png"
-dest_files=["res://.godot/imported/quasar.png-66f9fa9d25b3811d80a506fdd04f1501.ctex"]
+source_file="res://whiteRectangle.webp"
+dest_files=["res://.godot/imported/whiteRectangle.webp-8a3f92e96fae3d7f538e65d067b87f6d.ctex"]
 
 [params]
 
