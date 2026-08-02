@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://4d83v8sjt701"]
+
+[ext_resource type="Texture2D" uid="uid://b3t1it1o8bllp" path="res://assets/whiteRectangle.webp" id="1_nuuaj"]
+[ext_resource type="Script" uid="uid://b844s1b22vqru" path="res://godotFiles/scripts/piano_note.gd" id="2_jsjrq"]
+
+[sub_resource type="Animation" id="Animation_ufrjt"]
+length = 0.001
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:self_modulate:a")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0.3, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+
+[sub_resource type="Animation" id="Animation_60ajr"]
+resource_name = "glow"
+length = 0.13
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:self_modulate:a")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(0.3, -0.25, 0, 0.25, 0, 1, -0.010004859, -0.03594771, 0, 0, 0.3, -0.023328476, 0.03594771, 0, 0),
+"times": PackedFloat32Array(0, 0.033333335, 0.13)
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_bh515"]
+_data = {
+&"RESET": SubResource("Animation_ufrjt"),
+&"glow": SubResource("Animation_60ajr")
+}
+
+[node name="PianoNote" type="TextureRect" unique_id=1974686711]
+self_modulate = Color(0.49876052, 0.5692231, 0.5490909, 0.3)
+size_flags_vertical = 3
+texture = ExtResource("1_nuuaj")
+expand_mode = 2
+script = ExtResource("2_jsjrq")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=84790682]
+libraries/ = SubResource("AnimationLibrary_bh515")
