@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bbw3v04vc3aty"
-path="res://.godot/imported/Desmos60noteVisual.png-e60a3eb7c3d07e60dfe7743fdc65978b.ctex"
+uid="uid://hka0x8yow7qf"
+path="res://.godot/imported/Desmos60noteVisual2.png-878dcc0282370dc088b03b751558639e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/img/Desmos60noteVisual.png"
-dest_files=["res://.godot/imported/Desmos60noteVisual.png-e60a3eb7c3d07e60dfe7743fdc65978b.ctex"]
+source_file="res://assets/img/Desmos60noteVisual2.png"
+dest_files=["res://.godot/imported/Desmos60noteVisual2.png-878dcc0282370dc088b03b751558639e.ctex"]
 
 [params]
 
