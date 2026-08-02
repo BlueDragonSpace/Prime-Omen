@@ -1,7 +1,7 @@
 doo doot doo...
 
 (Reimagining [this Desmos Graph](https://www.desmos.com/calculator/bmfgmy4tsa) as music)
-![Desmos Graph Photo](assets/img/Desmos60noteVisual.png)
+![Desmos Graph Photo](assets/img/Desmos60noteVisual2.png)
 
 7/29/2026:
 The basic idea - Have Desmos try to predict what the next prime number is using a regression line, and then turn those into musical notes.
