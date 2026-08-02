@@ -10,7 +10,7 @@ Initially used pitch-shifting for the sounds, and realized it sounded terrible, 
 <br> kinda haunting knowing how much it sounds like it has a pattern, when there isn't really... it's strange
 
 <br>
-<br>8PM: You know, this reminds me of the [Egg Song](linkhttps://www.youtube.com/watch?v=JvAjtd8jhZc) from Animal Well...
+<br>8PM: You know, this reminds me of the [Egg Song](https://www.youtube.com/watch?v=JvAjtd8jhZc) from Animal Well...
 
 <br><br>
 7/30: Fixed an error where the first note wouldn't be visualized, and made two different sound visualizers. One I uhhhhh... "imported" (mostly copypasted, it's under MIT License) from a [Godot Asset Demo](https://godotengine.org/asset-library/asset/2762). The other is made by hand, and shows the notes going from left to right. Currently has goofy placeholder art.
