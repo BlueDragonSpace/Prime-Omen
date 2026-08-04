@@ -424,7 +424,6 @@ text = "Stop"
 layout_mode = 2
 size_flags_horizontal = 3
 mouse_default_cursor_shape = 2
-button_pressed = true
 text = "Loop"
 alignment = 1
 icon_alignment = 1
