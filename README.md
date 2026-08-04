@@ -22,3 +22,8 @@ from Animal Well...
 <br><br>
 8/1: Fixed an error where consecutive notes wouldn't visualize on the piano roll, messed around a little bit too much with the button themes, and replaced the placeholder art.<br>Tbh, all of the technically challenging stuff that I wanted to do with this project is done already, I don't have a lot of other things I want to do with it...
 <br>Later: Added a progress bar, credits, song selector, reorganized files, 
+
+<br><br>
+8/3: Hid notes that weren't being used in the current song, and made middle C a different color, and doubled the amount of notes in cache.
+There's still technically one note that can't be played (on the 300 note song), since it's so low that Ultrabox doesn't even have a note for it.
+There's also a bunch of really high notes that never get used, but are still stored for the sake of holding an entire piano roll.

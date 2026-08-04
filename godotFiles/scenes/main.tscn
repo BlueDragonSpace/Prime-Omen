@@ -4,18 +4,32 @@
 [ext_resource type="Script" uid="uid://d3ihum5b3gond" path="res://godotFiles/scripts/main.gd" id="2_6lc3l"]
 [ext_resource type="AudioStream" uid="uid://l4y0vho081ud" path="res://assets/SquareWave0.wav" id="3_squlw"]
 [ext_resource type="AudioStream" uid="uid://cartvtxccxm4a" path="res://assets/sounds/C6.wav" id="4_fq48f"]
+[ext_resource type="AudioStream" uid="uid://c773vswgg6vrb" path="res://assets/sounds/C8.wav" id="4_kq3ji"]
+[ext_resource type="AudioStream" uid="uid://cpvhytkw5kre3" path="res://assets/sounds/B8.wav" id="5_r8aaa"]
 [ext_resource type="AudioStream" uid="uid://c0ovsmeg72uxs" path="res://assets/sounds/B6.wav" id="5_w3flt"]
+[ext_resource type="AudioStream" uid="uid://ccrb1e5vv7jra" path="res://assets/sounds/A8.wav" id="6_5mj6e"]
 [ext_resource type="AudioStream" uid="uid://d2tee7ukxejxh" path="res://assets/sounds/A6.wav" id="6_vbwyo"]
+[ext_resource type="AudioStream" uid="uid://dy8obgkjsvpmh" path="res://assets/sounds/G8.wav" id="7_k0k0w"]
 [ext_resource type="AudioStream" uid="uid://b0yqp6rajll77" path="res://assets/sounds/G6.wav" id="7_ts26o"]
 [ext_resource type="AudioStream" uid="uid://im0f4hrkkn60" path="res://assets/sounds/F6.wav" id="8_k0eh5"]
+[ext_resource type="AudioStream" uid="uid://b2wtp2r74th1g" path="res://assets/sounds/F8.wav" id="8_u01ed"]
+[ext_resource type="AudioStream" uid="uid://ca7miectp30b" path="res://assets/sounds/E8.wav" id="9_e8mi6"]
 [ext_resource type="AudioStream" uid="uid://b65strohfa2vj" path="res://assets/sounds/E6.wav" id="9_up8da"]
 [ext_resource type="AudioStream" uid="uid://b72shwo7yibfw" path="res://assets/sounds/D6.wav" id="10_8epi3"]
+[ext_resource type="AudioStream" uid="uid://botrxl6akuu2y" path="res://assets/sounds/D8.wav" id="10_e1mlw"]
 [ext_resource type="AudioStream" uid="uid://gwpr27y1t8me" path="res://assets/sounds/C5.wav" id="11_j8bcw"]
+[ext_resource type="AudioStream" uid="uid://djvjoohhs5kd4" path="res://assets/sounds/C7.wav" id="11_qg41t"]
+[ext_resource type="AudioStream" uid="uid://vxmrkrofnjg5" path="res://assets/sounds/B7.wav" id="12_ngieg"]
 [ext_resource type="AudioStream" uid="uid://cu20g0w47tp3m" path="res://assets/sounds/B5.wav" id="12_s6t5l"]
 [ext_resource type="AudioStream" uid="uid://cq75w8g0mbqfb" path="res://assets/sounds/A5.wav" id="13_jsrmf"]
+[ext_resource type="AudioStream" uid="uid://3h2lemoa21h3" path="res://assets/sounds/A7.wav" id="13_ynn6h"]
 [ext_resource type="AudioStream" uid="uid://no2csux14upr" path="res://assets/sounds/G5.wav" id="14_c7vlh"]
+[ext_resource type="AudioStream" uid="uid://bxfk0xat6sho" path="res://assets/sounds/G7.wav" id="14_d1t74"]
 [ext_resource type="AudioStream" uid="uid://xnpfy5ss5yu8" path="res://assets/sounds/F5.wav" id="15_sihtt"]
+[ext_resource type="AudioStream" uid="uid://bxmw8yruy86wo" path="res://assets/sounds/F7.wav" id="15_vvbrj"]
 [ext_resource type="AudioStream" uid="uid://nqxe5deox5ed" path="res://assets/sounds/E5.wav" id="16_4p8lm"]
+[ext_resource type="AudioStream" uid="uid://belwnp20g7pp8" path="res://assets/sounds/E7.wav" id="16_qp57h"]
+[ext_resource type="AudioStream" uid="uid://dbb4rfh856yjw" path="res://assets/sounds/D7.wav" id="17_60b27"]
 [ext_resource type="AudioStream" uid="uid://c7i73i05lo3so" path="res://assets/sounds/D5.wav" id="17_arfad"]
 [ext_resource type="AudioStream" uid="uid://dinjcvpu04ix5" path="res://assets/sounds/C4.wav" id="18_khttm"]
 [ext_resource type="AudioStream" uid="uid://kd8putdbwvqj" path="res://assets/sounds/B4.wav" id="19_vuxgt"]
@@ -34,6 +48,21 @@
 [ext_resource type="AudioStream" uid="uid://0x1ad3tni8s0" path="res://assets/EmptyNote.wav" id="32_5mj6e"]
 [ext_resource type="Script" uid="uid://kp4tbm3s8mjy" path="res://godotFiles/scripts/spectrum_visual.gd" id="33_k0k0w"]
 [ext_resource type="Texture2D" uid="uid://cadljgc2gub8x" path="res://assets/img/icon.svg" id="34_u01ed"]
+[ext_resource type="AudioStream" uid="uid://8uqyramq520f" path="res://assets/sounds/C2.wav" id="46_42by3"]
+[ext_resource type="AudioStream" uid="uid://b1xdeg2fqcp50" path="res://assets/sounds/B2.wav" id="47_v5isn"]
+[ext_resource type="AudioStream" uid="uid://sl63dwrkmuna" path="res://assets/sounds/A2.wav" id="48_hodim"]
+[ext_resource type="AudioStream" uid="uid://bpmkatyqvuk37" path="res://assets/sounds/G2.wav" id="49_gikv2"]
+[ext_resource type="AudioStream" uid="uid://c11f523rbvipf" path="res://assets/sounds/F2.wav" id="50_csvr1"]
+[ext_resource type="AudioStream" uid="uid://dj1p013levhkm" path="res://assets/sounds/E2.wav" id="51_t2rg3"]
+[ext_resource type="AudioStream" uid="uid://ddsjkxujhtk0o" path="res://assets/sounds/D2.wav" id="52_wbffm"]
+[ext_resource type="AudioStream" uid="uid://86porho4hepk" path="res://assets/sounds/C1.wav" id="53_bml21"]
+[ext_resource type="AudioStream" uid="uid://b5fhjtkv8q51y" path="res://assets/sounds/B1.wav" id="54_rfqp1"]
+[ext_resource type="AudioStream" uid="uid://bhwxpgvopg7pv" path="res://assets/sounds/A1.wav" id="55_1fau8"]
+[ext_resource type="AudioStream" uid="uid://b2a8bm50tbist" path="res://assets/sounds/G1.wav" id="56_o0emn"]
+[ext_resource type="AudioStream" uid="uid://c5epve5kikn46" path="res://assets/sounds/F1.wav" id="57_jdxva"]
+[ext_resource type="AudioStream" uid="uid://dn6fvlfvuha2s" path="res://assets/sounds/E1.wav" id="58_o8i1x"]
+[ext_resource type="AudioStream" uid="uid://br8gq1e6d6vq2" path="res://assets/sounds/D1.wav" id="59_3ufu7"]
+[ext_resource type="AudioStream" uid="uid://rv6jyyuybsi1" path="res://assets/sounds/C0.wav" id="60_kmkro"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4k2k6"]
 bg_color = Color(0.69366175, 0.741132, 0.5366445, 1)
@@ -109,6 +138,48 @@ script = ExtResource("2_6lc3l")
 stream = ExtResource("3_squlw")
 
 [node name="NewSoundSystem" type="Node" parent="." unique_id=444491468]
+
+[node name="C8" type="AudioStreamPlayer" parent="NewSoundSystem" unique_id=2121366558]
+stream = ExtResource("4_kq3ji")
+
+[node name="B8" type="AudioStreamPlayer" parent="NewSoundSystem" unique_id=1632750387]
+stream = ExtResource("5_r8aaa")
+
+[node name="A8" type="AudioStreamPlayer" parent="NewSoundSystem" unique_id=1938108565]
+stream = ExtResource("6_5mj6e")
+
+[node name="G8" type="AudioStreamPlayer" parent="NewSoundSystem" unique_id=716873854]
+stream = ExtResource("7_k0k0w")
+
+[node name="F8" type="AudioStreamPlayer" parent="NewSoundSystem" unique_id=1275397392]
+stream = ExtResource("8_u01ed")
+
+[node name="E8" type="AudioStreamPlayer" parent="NewSoundSystem" unique_id=1003006727]
+stream = ExtResource("9_e8mi6")
+
+[node name="D8" type="AudioStreamPlayer" parent="NewSoundSystem" unique_id=971270038]
+stream = ExtResource("10_e1mlw")
+
+[node name="C7" type="AudioStreamPlayer" parent="NewSoundSystem" unique_id=649610491]
+stream = ExtResource("11_qg41t")
+
+[node name="B7" type="AudioStreamPlayer" parent="NewSoundSystem" unique_id=1317790186]
+stream = ExtResource("12_ngieg")
+
+[node name="A7" type="AudioStreamPlayer" parent="NewSoundSystem" unique_id=177012959]
+stream = ExtResource("13_ynn6h")
+
+[node name="G7" type="AudioStreamPlayer" parent="NewSoundSystem" unique_id=1512754976]
+stream = ExtResource("14_d1t74")
+
+[node name="F7" type="AudioStreamPlayer" parent="NewSoundSystem" unique_id=658135802]
+stream = ExtResource("15_vvbrj")
+
+[node name="E7" type="AudioStreamPlayer" parent="NewSoundSystem" unique_id=1614329758]
+stream = ExtResource("16_qp57h")
+
+[node name="D7" type="AudioStreamPlayer" parent="NewSoundSystem" unique_id=265973387]
+stream = ExtResource("17_60b27")
 
 [node name="C6" type="AudioStreamPlayer" parent="NewSoundSystem" unique_id=1663591597]
 stream = ExtResource("4_fq48f")
@@ -194,6 +265,51 @@ stream = ExtResource("30_kq3ji")
 
 [node name="D3" type="AudioStreamPlayer" parent="NewSoundSystem" unique_id=718346442]
 stream = ExtResource("31_r8aaa")
+
+[node name="C2" type="AudioStreamPlayer" parent="NewSoundSystem" unique_id=1750721628]
+stream = ExtResource("46_42by3")
+
+[node name="B2" type="AudioStreamPlayer" parent="NewSoundSystem" unique_id=1884908963]
+stream = ExtResource("47_v5isn")
+
+[node name="A2" type="AudioStreamPlayer" parent="NewSoundSystem" unique_id=944925485]
+stream = ExtResource("48_hodim")
+
+[node name="G2" type="AudioStreamPlayer" parent="NewSoundSystem" unique_id=1419208365]
+stream = ExtResource("49_gikv2")
+
+[node name="F2" type="AudioStreamPlayer" parent="NewSoundSystem" unique_id=1517122374]
+stream = ExtResource("50_csvr1")
+
+[node name="E2" type="AudioStreamPlayer" parent="NewSoundSystem" unique_id=2099762241]
+stream = ExtResource("51_t2rg3")
+
+[node name="D2" type="AudioStreamPlayer" parent="NewSoundSystem" unique_id=597136478]
+stream = ExtResource("52_wbffm")
+
+[node name="C1" type="AudioStreamPlayer" parent="NewSoundSystem" unique_id=1214880177]
+stream = ExtResource("53_bml21")
+
+[node name="B1" type="AudioStreamPlayer" parent="NewSoundSystem" unique_id=1682249370]
+stream = ExtResource("54_rfqp1")
+
+[node name="A1" type="AudioStreamPlayer" parent="NewSoundSystem" unique_id=748318358]
+stream = ExtResource("55_1fau8")
+
+[node name="G1" type="AudioStreamPlayer" parent="NewSoundSystem" unique_id=1968028286]
+stream = ExtResource("56_o0emn")
+
+[node name="F1" type="AudioStreamPlayer" parent="NewSoundSystem" unique_id=1115336332]
+stream = ExtResource("57_jdxva")
+
+[node name="E1" type="AudioStreamPlayer" parent="NewSoundSystem" unique_id=60789355]
+stream = ExtResource("58_o8i1x")
+
+[node name="D1" type="AudioStreamPlayer" parent="NewSoundSystem" unique_id=759596874]
+stream = ExtResource("59_3ufu7")
+
+[node name="C0" type="AudioStreamPlayer" parent="NewSoundSystem" unique_id=2075023354]
+stream = ExtResource("60_kmkro")
 
 [node name="EmptyNote" type="AudioStreamPlayer" parent="." unique_id=1425132629]
 stream = ExtResource("32_5mj6e")
@@ -434,6 +550,20 @@ size_flags_vertical = 3
 size_flags_stretch_ratio = 0.35
 
 [connection signal="finished" from="OldSystem" to="." method="_on_audio_stream_player_finished"]
+[connection signal="finished" from="NewSoundSystem/C8" to="." method="_on_audio_stream_player_finished"]
+[connection signal="finished" from="NewSoundSystem/B8" to="." method="_on_audio_stream_player_finished"]
+[connection signal="finished" from="NewSoundSystem/A8" to="." method="_on_audio_stream_player_finished"]
+[connection signal="finished" from="NewSoundSystem/G8" to="." method="_on_audio_stream_player_finished"]
+[connection signal="finished" from="NewSoundSystem/F8" to="." method="_on_audio_stream_player_finished"]
+[connection signal="finished" from="NewSoundSystem/E8" to="." method="_on_audio_stream_player_finished"]
+[connection signal="finished" from="NewSoundSystem/D8" to="." method="_on_audio_stream_player_finished"]
+[connection signal="finished" from="NewSoundSystem/C7" to="." method="_on_audio_stream_player_finished"]
+[connection signal="finished" from="NewSoundSystem/B7" to="." method="_on_audio_stream_player_finished"]
+[connection signal="finished" from="NewSoundSystem/A7" to="." method="_on_audio_stream_player_finished"]
+[connection signal="finished" from="NewSoundSystem/G7" to="." method="_on_audio_stream_player_finished"]
+[connection signal="finished" from="NewSoundSystem/F7" to="." method="_on_audio_stream_player_finished"]
+[connection signal="finished" from="NewSoundSystem/E7" to="." method="_on_audio_stream_player_finished"]
+[connection signal="finished" from="NewSoundSystem/D7" to="." method="_on_audio_stream_player_finished"]
 [connection signal="finished" from="NewSoundSystem/C6" to="." method="_on_audio_stream_player_finished"]
 [connection signal="finished" from="NewSoundSystem/B6" to="." method="_on_audio_stream_player_finished"]
 [connection signal="finished" from="NewSoundSystem/A6" to="." method="_on_audio_stream_player_finished"]
@@ -462,6 +592,21 @@ size_flags_stretch_ratio = 0.35
 [connection signal="finished" from="NewSoundSystem/F3" to="." method="_on_audio_stream_player_finished"]
 [connection signal="finished" from="NewSoundSystem/E3" to="." method="_on_audio_stream_player_finished"]
 [connection signal="finished" from="NewSoundSystem/D3" to="." method="_on_audio_stream_player_finished"]
+[connection signal="finished" from="NewSoundSystem/C2" to="." method="_on_audio_stream_player_finished"]
+[connection signal="finished" from="NewSoundSystem/B2" to="." method="_on_audio_stream_player_finished"]
+[connection signal="finished" from="NewSoundSystem/A2" to="." method="_on_audio_stream_player_finished"]
+[connection signal="finished" from="NewSoundSystem/G2" to="." method="_on_audio_stream_player_finished"]
+[connection signal="finished" from="NewSoundSystem/F2" to="." method="_on_audio_stream_player_finished"]
+[connection signal="finished" from="NewSoundSystem/E2" to="." method="_on_audio_stream_player_finished"]
+[connection signal="finished" from="NewSoundSystem/D2" to="." method="_on_audio_stream_player_finished"]
+[connection signal="finished" from="NewSoundSystem/C1" to="." method="_on_audio_stream_player_finished"]
+[connection signal="finished" from="NewSoundSystem/B1" to="." method="_on_audio_stream_player_finished"]
+[connection signal="finished" from="NewSoundSystem/A1" to="." method="_on_audio_stream_player_finished"]
+[connection signal="finished" from="NewSoundSystem/G1" to="." method="_on_audio_stream_player_finished"]
+[connection signal="finished" from="NewSoundSystem/F1" to="." method="_on_audio_stream_player_finished"]
+[connection signal="finished" from="NewSoundSystem/E1" to="." method="_on_audio_stream_player_finished"]
+[connection signal="finished" from="NewSoundSystem/D1" to="." method="_on_audio_stream_player_finished"]
+[connection signal="finished" from="NewSoundSystem/C0" to="." method="_on_audio_stream_player_finished"]
 [connection signal="finished" from="EmptyNote" to="." method="_on_audio_stream_player_finished"]
 [connection signal="finished" from="EmptyNote" to="." method="_on_empty_note_finished"]
 [connection signal="pressed" from="VBoxContainer/HBoxContainer/Start" to="." method="_on_start_pressed"]

@@ -15,7 +15,7 @@ const PIANO_NOTE = preload("uid://4d83v8sjt701")
 const AUDIO_BUS = preload("uid://b5mkten2d10uv")
 
 # da songs
-var one_note = [0]
+var one_note = [0,-1,1,2,-2,3,-3,4,-4]
 var ten_note = [1,0,0,0,1,0,0,-1,-1,1]
 var thirty_note = [1,-1,-1,-2,-1,-2,-1,-2,-2,0,-1,1,1,-1,-1,1,2,0,2,1,-1,0,0,1,4,3,1,0,-3,-4]
 var sixty_note = [0,-1,-1,-2,-1,-2,-2,-3,-3,0,-2,0,0,-2,-2,0,1,-1,1,0,-3,-1,-2,0,3,2,-1,-2,-5,-6,3,2,3,0,5,1,2,3,1,2,2,-1,3,0,-2,-5,1,7,6,2,0,0,-4,0,1,1,1,-3,-3,-5,]
@@ -35,6 +35,7 @@ var playing = false
 var c4_position : int
 
 func _ready() -> void:
+	
 	c4_position = c_4.get_index()
 	
 	# adds piano notes
@@ -42,6 +43,11 @@ func _ready() -> void:
 		var child = PIANO_NOTE.instantiate()
 		child.modulate.h = 0.5
 		piano_box.add_child(child)
+	
+	# makes C4 get a special color because it's superadtacular
+	piano_box.get_child(c4_position).self_modulate = Color(0.0, 0.0, 0.706, 0.302)
+	
+	switch_song(0)
 
 func _process(delta: float) -> void:
 	background.texture.noise.offset.x += 5 * delta
@@ -53,6 +59,26 @@ func start_song() -> void:
 	
 	# begins the song
 	empty_note.play()
+
+func switch_song(index: int) -> void:
+	playing = false
+	beat_count = 0
+	
+	pitches = songs[index]
+	
+	## make it so only the neccessary amount of notes on left are seen
+	# first make sure everything is visible in the first place
+	for child in piano_box.get_children():
+		child.visible = true
+	
+	# take out those below C4 (but not C4)
+	for i in range(0, pitches.min() + c4_position):
+		piano_box.get_child(i).visible = false
+	
+	# take out those above C4 (also not ever C4)
+	for i in range(pitches.max() + 1, piano_box.get_child_count() - c4_position):
+		piano_box.get_child(i + c4_position).visible = false
+	# use min / max ding dong
 
 func _on_audio_stream_player_finished() -> void:
 	
@@ -97,7 +123,4 @@ func _on_empty_note_finished() -> void:
 	print('empty note played')
 
 func _on_song_list_item_selected(index: int) -> void:
-	playing = false
-	beat_count = 0
-	
-	pitches = songs[index]
+	switch_song(index)
