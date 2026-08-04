@@ -1,4 +1,4 @@
-doo doot doo...
+Try it here!: [Prime Omen Player](https://file.garden/ZvYk8SE050beWacV/PrimeOmen2/index.html)
 
 (Reimagining [this Desmos Graph](https://www.desmos.com/calculator/bmfgmy4tsa) as music)
 ![Desmos Graph Photo](assets/img/Desmos60noteVisual2.png)
