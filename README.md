@@ -9,6 +9,7 @@ Made as part of Hack Club's [pulsewidth](https://pulsewidth.hackclub.com/) event
 Prime numbers have always had a strange, unpredictable pattern that no mathematician (even today!) has truly figured out. All this program really does is try to exploit that pattern and turn it into music.
 
 First, I got an exceptionally long list of prime numbers from an [academic-looking website](https://www.math.uchicago.edu/~luis/allprimes.html), and pasted it into an array on a [custom Desmos graph](https://www.desmos.com/calculator/bmfgmy4tsa). In the graph: (add a screenshot!) <br>
+![Desmos Graph](no_console.png)
 <br> "p" is the list of primes,
 <br> "n" is a dummy array that simply lists every integer from 1 to however many notes I want,
 <br> and "s" is how many notes I want.
@@ -17,7 +18,7 @@ First, I got an exceptionally long list of prime numbers from an [academic-looki
 <br> "e_1" is the list of all residuals,
 <br> "g" is the same thing as "e_1", but all the numbers are rounded instead (since music sounds nicer when you aren't trying to play a piano key 3.381 notes from middle C)
 <br> <br> This "g" is now the array that I turn into music in Godot! Every time a "0" is read from this array, middle C (or the middle-most note of a piano) is played. Middle C is shown as the blue note in Godot. For however much higher or lower the next number from the array is, the corresponding note is that far from middle C. For example, if an "3" is read from the array, the note that plays is 3 notes up from middle C.
-(add screenshot here blehhhhhh)
+![Godot Piano Roll](Screenshot(203).png)
 <br> And that's pretty much it really lol
 
 <h1>How to add your own Prime Omen!</h1>
@@ -44,5 +45,7 @@ for (i=0; i<expressionResult.listValue.length; i++) {
 }
 console.log(resultString)
 ```
-<br><br> You should now be able to copy and paste your notes into Godot. In Godot, make a new array in the "main.gd" script, then put that array at the end of the "songs" array.  (add a screenshot!) After that navigate to the SongList node in the SceneTree on the left, go to the "Items" property, hit the right button to go to the end of the array, press "Add Element", and put the name of your song in the new "Text" property you just created.
+<br>You should now be able to copy and paste your notes into Godot. In Godot, make a new array in the "main.gd" script, then put that array at the end of the "songs" array.  
+![Godot Script](your_song_here.png)
+<br> After that navigate to the SongList node in the SceneTree on the left, go to the "Items" property, hit the right button to go to the end of the array, press "Add Element", and put the name of your song in the new "Text" property you just created.
 <br> And you're done! Locally you'll be able to play your song under the dropdown menu.
